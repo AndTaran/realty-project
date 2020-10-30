@@ -1,0 +1,195 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .row .cards__holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .row .cards__holder > .card__link {
+  margin-bottom: 30px;
+}
+
+.container .row .main {
+  width: 870px;
+}
+
+.container .row .main .card__link {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.container .row .main .card__link:hover {
+  opacity: 0.8;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.container .row .main .card__link .card {
+  position: relative;
+  width: 270px;
+  background-color: #ffffff;
+}
+
+.container .row .main .card__link .card .card__badges {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .row .main .card__link .card .card__badges > * + * {
+  margin-left: 10px;
+}
+
+.container .row .main .card__link .card .card__badges .card__badge {
+  display: inline-block;
+  border-radius: 4px;
+  height: 22px;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.container .row .main .card__link .card .card__badges .card__badge--class {
+  background: #ffcf26;
+  color: #000000;
+}
+
+.container .row .main .card__link .card .card__badges .card__badge--credit {
+  background: #11be75;
+  color: #ffffff;
+}
+
+.container .row .main .card__link .card .card__content {
+  padding: 16px 15px 20px;
+}
+
+.container .row .main .card__link .card .card__content .card__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.container .row .main .card__link .card .card__content .card__term {
+  margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.container .row .main .card__link .card .card__content .card__metro {
+  margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.container .row .main .card__link .card .card__content .card__metro:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 16px;
+  height: 11px;
+  background-image: url("/images/icons/Vector.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.container .row .main .card__link .card .card__content .card__address {
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+}
+
+.container .row .main .btn__more {
+  width: 100%;
+  height: 80px;
+  background: #E5E5E5;
+  border-radius: 4px;
+  border: none;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4290C9;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.container .row .main .btn__more:hover {
+  background-color: #cccccc;
+}
+
+.container .row .main .btn__more img {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
+.container .row .sidebar {
+  width: 270px;
+}
+
+.container .row .sidebar .widget .widget__title {
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.container .row .sidebar .widget .widget__title::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(./../images/icons/chevron-up.svg);
+  background-repeat: no-repeat;
+  background-size: initial;
+}
